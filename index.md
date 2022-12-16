@@ -6,3 +6,5 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 ***
 ![image](output/Importance_feature.jpg)
 
+{% include importance-feature.html %}
+
