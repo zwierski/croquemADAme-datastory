@@ -6,8 +6,7 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 
 ***
 
-<img src="nubelson-fernandes-ZdOsQiwp0Ss-unsplash.jpg" alt="nubelson-fernandes-ZdOsQiwp0Ss-unsplash" width="650"/>
-
+![image](nubelson-fernandes-ZdOsQiwp0Ss-unsplash.jpg)
 
 Let's look at the example of "name". "name" is an amateur video maker who enjoys filming small skits and sharing them with his friends. Lately, he started thinking about gathering a larger audience: and what better way to do so than post his skits on YouTube? It'll definitely give his work a lot of exposure! "name" is a bit intimidated, however. With so many entertainers on the platform, how is he going to stand out? 
 
