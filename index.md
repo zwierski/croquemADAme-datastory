@@ -54,7 +54,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 *Thank you so much! Ada*
 
-![image](images\ada_part2.jpg)
+![image](images\ada_part2_white.jpg)
 
 # Topical analysis - Which topics are successful for Entertainment channels on YouTube?
 
@@ -64,7 +64,7 @@ TODO: describe the topic analysis as a response to Ada's question.
 
 TODO: Ada sends another message, she focused on more popular topics and her channel exploded
 
-![image](images\ada_part3.jpg)
+![image](images\ada_part3_white.jpg)
 
 # Conclusion
 
