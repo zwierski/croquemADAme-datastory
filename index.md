@@ -34,7 +34,6 @@ TODO: Describe the criteria analysis, as a response to Ada's question.
 
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
-![image](output/Importance_feature.jpg)
 
 # The story of Ada - Part 2
 
@@ -59,10 +58,22 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 
 
-{% include file.html %}
+{% include features_importance.html %}
 
-{% include file1.html %}
+{% include title_features_importance.html.html %}
 
-{% include file2.html %}
+{% include buzz_topics.html %}
+
+{% include quiet_topics.html %}
+
+![image](output/Venn_lexical.png)
+
+![image](output/relative_use_lexical.png)
+
+![image](output/tags_quiet_lexical.png)
+
+![image](output/tags_buzz_lexical.png)
+
+![image](output/evolution_sub_ytb_lexical.png)
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
