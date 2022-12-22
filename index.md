@@ -94,5 +94,9 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 ![image](output/evolution_sub_ytb_lexical.png)
 
+![image](output\wordcloud_tags_buzz.png)
+
+![image](output\wordcloud_tags_quiet.png)
+
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
