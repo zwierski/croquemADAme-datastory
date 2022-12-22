@@ -20,6 +20,11 @@ To answer these questions, we will use a large dataset of YouTube channels and v
 
 {% include categories.html %}
 
+We selected channels in the Entertainment category, which has the largest number of channels in the database.
+
+Then, we calculated a "growth score", that is, an indicator of the channels' viral success. The score was calculated by dividing the channel's number of subscribers in the latest timeseries by the number of days the channel was active (date of the latest timeseries - date of the channel's registration). We kept the 15% of channels with the best growth score as our "buzzing" channels, and the 15% with the worst score as our "quiet" channels.
+
+
 # The story of Ada - Chapter 1: My first video
 
 *Hi,*
