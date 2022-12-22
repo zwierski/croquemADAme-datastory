@@ -72,7 +72,7 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 {% include features_importance.html %}
 
-{% include title_features_importance.html.html %}
+{% include title_features_importance.html %}
 
 {% include buzz_topics.html %}
 
