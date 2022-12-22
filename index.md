@@ -66,6 +66,12 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 {% include quiet_topics.html %}
 
+{% boxplot_mean_is_tags.html %}
+
+{% boxplot_mean_numwords.html %}
+
+{% boxplot_week_freq.html %}
+
 ![image](output/venn_lexical.png)
 
 ![image](output/relative_use_lexical.png)
