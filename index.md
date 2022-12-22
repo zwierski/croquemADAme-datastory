@@ -20,7 +20,7 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 
 *Thanks, Ada Westerlain*
 
-![image](images\ada_part1.jpg)
+![image](images\ada_part1_white.jpg)
 
 # Evaluating relevant criteria for the success of a YouTube video
 
