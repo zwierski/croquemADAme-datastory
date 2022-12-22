@@ -22,11 +22,11 @@ To answer these questions, we will use a large dataset of YouTube channels and v
 
 # The story of Ada - Part 1
 
->*Hi,*
->
->*My name is Ada, I heard you were doing research on how small YouTubers can become successful, so that's why I reached out.*
->
->*So here's the whole story: I'm a uni student, I like to make small vlogs about my daily life and share them with my friends. Some time ago, they suggested I put them on YouTube, which I thought was an exciting idea! Can you imagine, so many people around the world seeing my videos! So I've been uploading my videos, but I've barely been getting any views... I'm so confused, what am I doing wrong? Vlogs are popular, plus I film with top-notch material and I work a lot on the editing too... Is there anything else which could help me grow my channel?*
+*Hi,*
+
+*My name is Ada, I heard you were doing research on how small YouTubers can become successful, so that's why I reached out.*
+
+*So here's the whole story: I'm a uni student, I like to make small vlogs about my daily life and share them with my friends. Some time ago, they suggested I put them on YouTube, which I thought was an exciting idea! Can you imagine, so many people around the world seeing my videos! So I've been uploading my videos, but I've barely been getting any views... I'm so confused, what am I doing wrong? Vlogs are popular, plus I film with top-notch material and I work a lot on the editing too... Is there anything else which could help me grow my channel?*
 
 # Evaluating relevant criteria for the success of a YouTube video
 
