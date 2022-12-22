@@ -35,7 +35,7 @@ Then, we calculated a "growth score", that is, an indicator of the channels' vir
 
 *Thanks, Ada Westerlain*
 
-![image](images\ada_part1.jpg)
+![image](images\ada_part1_white.jpg)
 
 # Evaluating relevant criteria for the success of a YouTube video
 
