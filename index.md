@@ -66,14 +66,15 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 {% include quiet_topics.html %}
 
-![image](output/Venn_lexical.png)
+![image](output/venn_lexical.png)
 
 ![image](output/relative_use_lexical.png)
 
-![image](output/tags_quiet_lexical.png)
+![image](output/tags_quiet.png)
 
-![image](output/tags_buzz_lexical.png)
+![image](output/tags_buzz.png)
 
 ![image](output/evolution_sub_ytb_lexical.png)
+
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
