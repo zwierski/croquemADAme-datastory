@@ -7,7 +7,7 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 ***
 
 
-![image](sebastian-pandelache-taPBy6XyMoQ-unsplash.jpg)
+![image](images\sebastian-pandelache-taPBy6XyMoQ-unsplash.jpg)
 
 
 
@@ -20,13 +20,17 @@ To answer these questions, we will use a large dataset of YouTube channels and v
 
 {% include categories.html %}
 
-# The story of Ada - Part 1
+# The story of Ada - Chapter 1: My first video
 
 *Hi,*
 
 *My name is Ada, I heard you were doing research on how small YouTubers can become successful, so that's why I reached out.*
 
 *So here's the whole story: I'm a uni student, I like to make small vlogs about my daily life and share them with my friends. Some time ago, they suggested I put them on YouTube, which I thought was an exciting idea! Can you imagine, so many people around the world seeing my videos! So I've been uploading my videos, but I've barely been getting any views... I'm so confused, what am I doing wrong? Vlogs are popular, plus I film with top-notch material and I work a lot on the editing too... Is there anything else which could help me grow my channel?*
+
+*Thanks, Ada Westerlain*
+
+![image](images\ada_part1.jpg)
 
 # Evaluating relevant criteria for the success of a YouTube video
 
@@ -35,24 +39,27 @@ TODO: Describe the criteria analysis, as a response to Ada's question.
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
 
-# The story of Ada - Part 2
+# The story of Ada - Chapter 2: The importance of the title
 
 *Hi!*
 
 *I've got good news: the videos I've posted since last time have been so successful! I made sure to follow your advice about the title and the tags, you know adding relevant words and capitalization and all that. I've even got more than 100 subscribers now! Oh and don't know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I still have some questions though... Sometimes there's a big difference in the number of views I get on each video. One time I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just not making videos about lame topics or what?
-*Thank you so much!*
-*Ada*
+*I still have some questions though... Sometimes there's a big difference in the number of views I get on each video. One time I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just not making videos about lame topics or what?*
 
+*Thank you so much! Ada*
+
+![image](images\ada_part2.jpg)
 
 # Topical analysis - Which topics are successful for Entertainment channels on YouTube?
 
 TODO: describe the topic analysis as a response to Ada's question.
 
-# The story of Ada - Part 3
+# The story of Ada - Chapter 3: The buzz
 
 TODO: Ada sends another message, she focused on more popular topics and her channel exploded
+
+![image](images\ada_part3.jpg)
 
 # Conclusion
 
