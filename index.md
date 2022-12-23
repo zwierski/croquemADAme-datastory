@@ -117,7 +117,15 @@ mean_first_person_singular,mean_first_person_plural,mean_second_person,mean_thir
 
 TODO: describe the topic analysis as a response to Ada's question.
 
-tags and sentiment analysis
+Dear Ada,
+
+First of all, we're happy that our advice could help! Congrats on passing the bar of 100 subscribers, that's already an impressive milestone.
+
+Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. We studied the distribution of tags in both buzzing and quiet channels, and compiled the most used tags in both.
+
+![image](output/tags_quiet.png)
+
+![image](output/tags_buzz.png)
 
 {% include buzz_topics.html %}
 
@@ -125,7 +133,11 @@ tags and sentiment analysis
 
 # The story of Ada - Chapter 4: The buzz
 
-TODO: Ada sends another message, she focused on more popular topics and her channel exploded
+*Hi!!*
+
+*So I made a new video: I put together some of the topics you suggested. And you know what? It got over 30'000 views, I can't believe it!*
+
+*I also made a few more videos about uni, actually. I love my classes and missed talking about them in my vlogs...*
 
 ![image](images\ada_part3_white.jpg)
 
@@ -166,11 +178,9 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 ![image](output/relative_use_lexical.png)
 
-![image](output/tags_quiet.png)
 
-![image](output/tags_buzz.png)
 
-![image](output/evolution_sub_ytb_lexical.png)
+![image](output/evolution_sub_ytb.png)
 
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
