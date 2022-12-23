@@ -228,4 +228,22 @@ As for the topics of the videos, many topics aren't strictly determinant for an 
 
 ---
 
+<<<<<<< HEAD
 NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
+=======
+NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
+
+![image](output/venn_lexical.png)
+
+{% include boxplot_mean_capital_title.html %}
+
+![image](output/wordclouds.png)
+
+![image](output/relative_use_lexical.png)
+
+{% include boxplot_mean_numtags.html %}
+
+![image](output/evolution_sub_ytb.png)
+
+{% include boxplot_mean_duration.html %}
+>>>>>>> 3380e0aa989feeb19d098df67f0edc88aa5aa466
