@@ -66,7 +66,7 @@ We then ordered the parameters by order of importance, that is, by how much each
 
 {% include title_features_importance.html %}
 
-From this, we can see that among these parameters, the number of words in the title clearly has the most influence on the success of the video. Let's see more specific values for this feature so you can apply it to your own videos.
+From this, we can see that among these parameters, the number of words in the title clearly has the most influence on the success of the video. Let's have a look at more specific values for this feature so you can apply it to your own videos.
 
 {% include boxplot_mean_numwords.html %}
 
@@ -74,20 +74,15 @@ As you can see in this boxplot, successful channels tend to have a few more word
 
 For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
 
-TODO: was there any interesting conclusion about pronoun use?
-
 Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
 
-On the other hand, capitalization of the words in the title seems to have a positive effect on the outcome. On average successful channels have 30% of capitalization and quite ones only 20%. Here are the results:
+Capitalization of the words in the title also seems to have a positive effect on the outcome. Here are the results of our analysis:
 
-TODO: add boxplot for the capitalization, i couldnt render the "pretty" ones, only the regulars
+{% include boxplot_mean_capital_title.html %}
 
-Finaly for the tags. We've seen the importance of adding tags to your videos but how many should you add? On average buzzing channels will have around 20 tags per video and quite ones only have half of that! This is an interesting conclusion as now you can tune the number of tags you use to potentiate visibility of the channel!
+On average, successful channels have 30% of capitalization and quiet ones only 20%. This could be due to two reasons: firstly, having proper capitalization at the start of the title's words - like you would have in a book or movie title - can give your video a more professional air. But more importantly, since it's important for a title to be eye-catching, we believe that writing the most important words in all-caps can strongly direct the viewer's attention to them.
 
-TODO: add boxplot for the number of tags, i couldnt render the "pretty" ones, only the regulars
-
-TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
-
+# Another main criteria: the video's duration
 
 Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
 
@@ -153,6 +148,10 @@ If we exclude stopwords such as "the" or "of", we observe that most of the commo
 
 Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
 
+But in the end, how many should you add? On average buzzing channels will have around 20 tags per video and quite ones only have half of that! This is an interesting conclusion as now you can tune the number of tags you use to potentiate visibility of the channel!
+
+{% include boxplot_mean_numtags.html %}
+
 We will give you wordclouds of the most used tags in buzzing and quiet channels, as a visual reminder.
 
 ![image](output/wordclouds.png)
@@ -210,6 +209,6 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 ![image](output/evolution_sub_ytb.png)
 {% include adas-evolution.html %}
-{% include boxplot_mean_capital_title.html %}
-{% include boxplot_mean_numtags.html %}
+
+
 {% include boxplot_mean_duration.html %}
