@@ -155,8 +155,7 @@ Moreover, unlike the title, tag words do not need to be exactly relevant to your
 
 We will give you wordclouds of the most used tags in buzzing and quiet channels, as a visual reminder.
 
-![image](output/wordcloud_tags_buzz.png)
-![image](output/wordcloud_tags_quiet.png)
+![image](output/wordclouds.png)
 
 Good luck with tagging your videos, Ada! We look forward to hearing again from you.
 
@@ -199,8 +198,6 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
-<<<<<<< HEAD
-=======
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
 
@@ -208,7 +205,6 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 ![image](output/venn_lexical.png)
 ![image](output/wordclouds.png)
->>>>>>> dd41f5204e9f495638ce2062bf19864646d6094b
 
 ![image](output/relative_use_lexical.png)
 
