@@ -99,7 +99,7 @@ mean_first_person_singular,mean_first_person_plural,mean_second_person,mean_thir
 
 *Thank you so much! Ada*
 
-![image](images\ada_part2.jpg)
+![image](images\ada_part2_white.jpg)
 
 
 # Topic analysis - Which topics are successful for Entertainment channels on YouTube?
@@ -113,7 +113,7 @@ tags and sentiment analysis
 
 TODO: Ada sends another message, she focused on more popular topics and her channel exploded
 
-![image](images\ada_part3.jpg)
+![image](images\ada_part3_white.jpg)
 
 # Final tip - ensure long term success
 
@@ -126,15 +126,15 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 {% include features_importance.html %}
 
-{% include title_features_importance.html %}
+
 
 {% include buzz_topics.html %}
 
 {% include quiet_topics.html %}
 
-{% include boxplot_mean_is_tags.html %}
 
-{% include boxplot_mean_numwords.html %}
+
+
 
 {% include boxplot_week_freq.html %}
 
@@ -147,10 +147,6 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 ![image](output/tags_buzz.png)
 
 ![image](output/evolution_sub_ytb_lexical.png)
-
-![image](output\wordcloud_tags_buzz.png)
-
-![image](output\wordcloud_tags_quiet.png)
 
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
