@@ -87,9 +87,9 @@ The results are clear: although both buzzing and quiet channels use tags in a la
 
 The importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
 
-Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly shorter than other channels. 
+Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
 
-As you can see unsuccessfull channels have videos that on average are three minutes longer. From the buzzing channels we can conclude that a duration between four to eight minutes is the one that works best!
+As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the one that works best!
 
 TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
 
