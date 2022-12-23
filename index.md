@@ -214,3 +214,4 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 ![image](output/evolution_sub_ytb.png)
 {% include adas-evolution.html %}
+{% include boxplot_mean_capital_title.html %}
