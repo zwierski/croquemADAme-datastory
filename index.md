@@ -10,7 +10,7 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 ![image](images\sebastian-pandelache-taPBy6XyMoQ-unsplash.jpg)
 
 
-# The story of Ada - Chapter 1: My first video and importance of the title
+# The story of Ada - Chapter 1: First video and starting criteria
 
 *Hi,*
 
@@ -62,7 +62,7 @@ We analyzed several parameters related to the videos' titles: the number of word
 
 We computed, for each channel, the mean of each of these parameters. Using this dataset of means across buzzing (1) and quiet (0) channels, we trained a random forest algorithm. This forest outputs whether or not a video title is likely to contribute to a video's success (1) or not (0), turning our title analysis into a simpler binary problem.
 
-We then ordered the parameters by order of importance, that is, by how much each of them decreases the impurity in the random forest's classification. 
+Then, we ordered the parameters by order of importance, that is, by how much each of them decreases the impurity in the random forest's classification. 
 
 {% include title_features_importance.html %}
 
@@ -84,10 +84,19 @@ On average, successful channels have 30% of capitalization and quiet ones only 2
 
 # Another main criteria: the video's duration
 
-Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
+Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels, as you can see on this boxplot.
+
+{% include boxplot_mean_duration.html %}
 
 As you can see unsuccessful channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
 
+
+
+
+
+Good luck with your YouTube channel! Please let us know if you have any more questions.
+
+---
 
 # The story of Ada - Chapter 2: Trending topics?
 
@@ -117,6 +126,8 @@ This overlap makes sense due to the size of the database of channels: there are 
 ![image](output/relative_use_lexical.png)
 
 ![image](output/venn_lexical.png)
+
+---
 
 # The story of Ada - Chapter 3: Don't forget the tags!
 
@@ -211,4 +222,3 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 {% include adas-evolution.html %}
 
 
-{% include boxplot_mean_duration.html %}
