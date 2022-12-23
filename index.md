@@ -1,7 +1,7 @@
 ***
 
 # Abstract
-Nowadays, anyone with a smartphone and an Internet connection can become a YouTuber. Many beginners dream of success on the platform, with videos acclaimed by millions of subscribers. However, reaching fame is not as easy as it seems: indeed, with how much the number of creators has grown in the past years, it has become increasingly difficult to make an impact. The difference between famous and unknown YouTubers may lie in more than the quality of their videos. Are there any metrics in famous YouTubers' most viral videos - title, length, category, upload date - that set them apart from the rest? Could these metrics be used to create a guide for YouTubers who are starting out?
+Nowadays, anyone with a smartphone and an Internet connection can become a YouTuber. Many beginners dream of success on the platform, with videos acclaimed by millions of subscribers. However, reaching fame is not as easy as it seems: indeed, with how much the number of creators has grown in the past years, it has become increasingly difficult to make an impact. The difference between famous and unknown YouTubers may lie in more than the quality of their videos. Are there any metrics in famous YouTubers' most viral videos - title, length, category, upload date - that set them apart from the rest? Could these metrics be used to create a guide for YouTubers who are starting out, and allow them to focus on the actual content with the certainty that other objective parameters are helping their success?
 
 
 ***
@@ -228,22 +228,4 @@ As for the topics of the videos, many topics aren't strictly determinant for an 
 
 ---
 
-<<<<<<< HEAD
 NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
-=======
-NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
-
-![image](output/venn_lexical.png)
-
-{% include boxplot_mean_capital_title.html %}
-
-![image](output/wordclouds.png)
-
-![image](output/relative_use_lexical.png)
-
-{% include boxplot_mean_numtags.html %}
-
-![image](output/evolution_sub_ytb.png)
-
-{% include boxplot_mean_duration.html %}
->>>>>>> 3380e0aa989feeb19d098df67f0edc88aa5aa466
