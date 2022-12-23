@@ -203,6 +203,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 ![image](output/relative_use_lexical.png)
 
 ![image](output/evolution_sub_ytb.png)
+{% include adas-evolution.html %}
 
 
 <script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
