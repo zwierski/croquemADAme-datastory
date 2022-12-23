@@ -72,29 +72,25 @@ From this, we can see that among these parameters, the number of words in the ti
 
 As you can see in this boxplot, successful channels tend to have a few more words than quiet channels in their videos' titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words: that is, describing your content in more detail - perhaps using more exciting adjectives as well - could boost your video's views.
 
-For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
-
-Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
-
 Capitalization of the words in the title also seems to have a positive effect on the outcome. Here are the results of our analysis:
 
 {% include boxplot_mean_capital_title.html %}
 
 On average, successful channels have 30% of capitalization and quiet ones only 20%. This could be due to two reasons: firstly, having proper capitalization at the start of the title's words - like you would have in a book or movie title - can give your video a more professional air. But more importantly, since it's important for a title to be eye-catching, we believe that writing the most important words in all-caps can strongly direct the viewer's attention to them.
 
+For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
+
+Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
+
 # Another main criteria: the video's duration
 
-Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels, as you can see on this boxplot.
+Another thing we noticed is how your uni vlog is 41 minutes long. Naturally, it's always exciting to add a lot of footage to your work, but if a video is too lengthy, users may be discouraged from clicking on it, let alone viewing it all the way through. In our analysis, we found that many of our successful and quiet channels have videos much shorter than 41 minutes on average, as you can see on this boxplot which displays the durations in seconds.
 
 {% include boxplot_mean_duration.html %}
 
-As you can see unsuccessful channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
+If we look at the median, buzzing channels' videos are slightly longer than quieter channels', that is, around 8 minutes long (versus 5 minutes and 30 seconds for quieter channels). Since you focus on vlogs, it's likely you might want to make videos a little lengthier than this. In that case, we'd recommend aiming for a length between the median and the 3rd quartile - here, the 3rd quartile for successful channels is around 12 minutes. This 8-12 minutes interval is rather precise and corresponds to a good 25 % of our dataset's successful channels. 
 
-
-
-
-
-Good luck with your YouTube channel! Please let us know if you have any more questions.
+To summarise, paying attention to the title of your videos as well as their duration is already a good start to make your videos more attractive. Good luck with your YouTube channel! Please let us know if you have any more questions.
 
 ---
 
@@ -104,11 +100,7 @@ Good luck with your YouTube channel! Please let us know if you have any more que
 
 *I’ve got good news: the new videos I’ve posted since last time have been quite successful! I made them shorter than the uni vlog (around 10 minutes like you suggested), and I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-<<<<<<< HEAD
 *I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 2000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
-=======
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 3000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
->>>>>>> 64d07fae3790c579e0a4079f9c68b3f4caf6b445
 
 ![image](images\ada_part2_white.jpg)
 
@@ -211,8 +203,6 @@ Here is the recipe we found the buzzing channels are following:
  - Video duration around 10 minutes.
 
 TODO: Add something about the topic analysis
-
-TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
 
 
