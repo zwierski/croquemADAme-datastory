@@ -27,17 +27,9 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 Dear Ada,
 
 Thanks for reaching out to us! We’ve been hard at work on our analysis, and we’d love to use it to help you. :)
-First of all, it's important to understand which "objective" parameters you can tune, as a content producer on youtube, to hopefully have a better performance in the long run. 
+We believe it's important to understand which "objective" parameters you can tune, as a content producer on YouTube, to hopefully have a better performance in the long run. 
 
-From the data we have access to as well as our knowledge of what potenciates engagement we selected four main parameters to study in depth: the titles of the videos, the tags used and, finally, the time constraints.
-
-Firstly looking at the title, there are two main categories of features: its content and its shape.
-
-For the content we chose to focus on referencing featutings, the use of different pronouns (with varying person and number) and the overall sentiment of the sentence (positive or negative). On the another hand, for the shape, the nuances taken into account were the number of words and the capitalization.
-
-Secondly, regarding the use of tags, the analysis was performed on the number of tags used and on the specific tags that are most used.
-At last, the time constraints refer to the duration of the videos and the posting frequency.
-Let's now focus on how we handle the data.
+But first, let's explain to you what kind of data we used for our research.
 
 # What data will we analyse?
 
@@ -54,7 +46,7 @@ To quantify a channel's success, we calculated a "growth score". This score was 
 
 It's important to note that throughout this data exploration project, the mean of every feature was computed in order to attribute one value per feature per channel (for example the number of words of the title of a given channel is actually the mean of the number of words in the title of every video of that channel).
 
-# A first glance at the features
+# Importance of the title
 
 After this first explanation, let's move on to some actual high level tips you can use in your channel's videos.
 
@@ -62,9 +54,11 @@ Here are the feature importances:
 
 {% include features_importance.html %}
 
-First of all, the title. The title of the video is one of the first things a potential viewer can see before clicking on your video (perhaps only second to the thumbnail, of which we unfortunately don't have an analysis): it's bound to be important and most likely have a very palpable influence in how the video is received.
+First of all, there's one thing we immediately noticed in the video you sent us: the title "day at my uni", while relevant and to the point, could be tweaked a little to be more attractive to your viewers.
 
-We analyzed several parameters related to the videos' titles: the number of words, the usage of capital letters, the usage of the 'featuring' lexical field - which can indicate collaboration with other YouTubers or simply the presence of other guests, which pronouns are used in the title, and finally, sentiment analysis of words related to positive or negative emotions in the title.
+Indeed, the title of a video is one of the first things a potential viewer can see before clicking on your video (perhaps only second to the thumbnail, of which we unfortunately don't have an analysis). It's bound to be important and most likely have a very palpable influence in how the video is received.
+
+We analyzed several parameters related to the videos' titles: the number of words, the usage of capital letters, the usage of the 'featuring' lexical field - which can indicate collaboration with other YouTubers or simply the presence of other guests, which pronouns are used in the title, and finally, the presence of words related to positive or negative emotions in the title.
 
 We computed, for each channel, the mean of each of these parameters. Using this dataset of means across buzzing (1) and quiet (0) channels, we trained a random forest algorithm. This forest outputs whether or not a video title is likely to contribute to a video's success (1) or not (0), turning our title analysis into a simpler binary problem.
 
@@ -76,15 +70,9 @@ From this, we can see that among these parameters, the number of words in the ti
 
 {% include boxplot_mean_numwords.html %}
 
-As you can see in this boxplot, successful channels tend to have a few more words in their titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words, that is, describing better your content (perhaps using more exciting adjectives as well) could have a good effect on the views you get.
+As you can see in this boxplot, successful channels tend to have a few more words than quiet channels in their videos' titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words: that is, describing your content in more detail - perhaps using more exciting adjectives as well - could boost your video's views.
 
-# Detailed title and tag analysis
-
-Hello again, Ada!
-
-You're right, there's still some work to do. Let's talk about capitalization, sentiment, featurings, pronouns and number of tags.
-
-For featurings unfortunatly we didn't see much difference in use between buzzing and quite channels. 
+For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
 
 TODO: was there any interesting conclusion about pronoun use?
 
@@ -103,16 +91,18 @@ TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, onl
 
 Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
 
-As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
+As you can see unsuccessful channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
 
 
 # The story of Ada - Chapter 2: Trending topics?
 
 *Hi!*
 
-*I’ve got good news: the videos I’ve posted since last time have been quite successful! I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
+*I’ve got good news: the new videos I’ve posted since last time have been quite successful! I made them shorter than the uni vlog (around 10 minutes like you suggested), and I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 100 views! But another time, I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
+*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 100 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
+
+![image](images\ada_part2_white.jpg)
 
 # Topic analysis - Which topics are successful for Entertainment channels on YouTube?
 
@@ -120,12 +110,13 @@ Dear Ada,
 
 First of all, we're happy that our advice could help! Congrats on getting some subscribers, that's already a promising milestone!
 
-Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. 
+Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. In the following graphs, you can see which topics appear the most in buzzing channels and quiet channels, their appearance being represented by a mean score.
 
 {% include buzz_topics.html %} {% include quiet_topics.html %}
 
-TODO
+You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in the 
 
+This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful.
 
 ![image](output/relative_use_lexical.png)
 
@@ -137,7 +128,7 @@ TODO
 
 *Thanks again! Ada*
 
-![image](images\ada_part2_white.jpg)
+
 
 Dear Ada,
 
@@ -159,7 +150,12 @@ Now, you might wonder which tags to use. To answer this question, we studied the
 
 If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
 
-Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "challenge" and "vlog".
+Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
+
+We will give you wordclouds of the most used tags in buzzing and quiet channels, as a visual reminder.
+
+![image](output/wordcloud_tags_buzz.png)
+![image](output/wordcloud_tags_quiet.png)
 
 Good luck with tagging your videos, Ada! We look forward to hearing again from you.
 
@@ -170,7 +166,7 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 *So I made a new video: I put together some of the topics you suggested. And you know what? It got over 30'000 views, I can't believe it!*
 
-*I also made a few more videos about uni, actually. I love my classes and missed talking about them in my vlogs...*
+*I also made a few more videos about uni, actually. I love my classes and missed talking about them in my vlogs... Unlike the first time, though, I made sure to pick a more attractive title, make the video shorter and use a bunch of tags. And they did pretty well! Maybe it's because I have more subscribers now, but I'm sure it's thanks to your advice too!*
 
 ![image](images\ada_part3_white.jpg)
 
