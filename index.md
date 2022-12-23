@@ -199,6 +199,16 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
+<<<<<<< HEAD
+=======
+TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
+
+
+
+
+![image](output/venn_lexical.png)
+![image](output/wordclouds.png)
+>>>>>>> dd41f5204e9f495638ce2062bf19864646d6094b
 
 ![image](output/relative_use_lexical.png)
 
