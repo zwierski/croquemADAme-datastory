@@ -115,7 +115,7 @@ Now, about the difference in views across your videos, this can definitely be li
 {% include buzz_topics.html %} 
 {% include quiet_topics.html %}
 
-You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in only one of the lists. One of the most blatant examples is how the lexical field of positive emotions appears quite high in the buzzing topic list, while the field of negative emotions is almost at the top of the quiet list.
+You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in only one of the lists. One of the most blatant examples is how the lexical field of positive emotions appears quite high in the buzzing topic list, while the field of negative emotions is almost at the top of the quiet list. 
 
 This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful.
 
@@ -151,7 +151,7 @@ Now, you might wonder which tags to use. To answer this question, we studied the
 
 ![image](output/tags_quiet.png)
 
-We observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
+We observe that most of the common tags appear in both buzzing and quiet channels. This is the same kind of overlap (due to the size of the database) we mentioned in the topic analysis. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
 
 Try to avoid adding stopwords such as "the" or "of", however. These only appears in the most common tag list for quiet videos, therefore they will likely not help much with the referencing of your videos. We think a possible reason to this would be the following: when users enter a search query, they may only type the words meaningful to their search - without adding stopwords that wouldn't help refine the search results.
 
@@ -202,12 +202,10 @@ Here is the recipe we found the buzzing channels are following:
  - At least 1 video per week, but it's better if you can do more,
  - Video duration around 10 minutes.
 
-TODO: Add something about the topic analysis
+As for the topics of the videos, many topics aren't strictly determinant for a video's success.
 
 If Ada keeps this up, this is what her evolution could look like in a few years!
 
 {% include adas-evolution.html %}
 
 NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
-
-![image](output/evolution_sub_ytb.png)
