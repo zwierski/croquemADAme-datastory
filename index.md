@@ -100,7 +100,7 @@ To summarise, paying attention to the title of your videos as well as their dura
 
 *I’ve got good news: the new videos I’ve posted since last time have been quite successful! I made them shorter than the uni vlog (around 10 minutes like you suggested), and I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 2000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
+*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 3000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
 
 ![image](images\ada_part2_white.jpg)
 
@@ -214,5 +214,6 @@ TODO: Add something about the topic analysis
 
 ![image](output/evolution_sub_ytb.png)
 {% include adas-evolution.html %}
-
-
+{% include boxplot_mean_capital_title.html %}
+{% include boxplot_mean_numtags.html %}
+{% include boxplot_mean_duration.html %}
