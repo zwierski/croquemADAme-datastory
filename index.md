@@ -112,23 +112,24 @@ First of all, we're happy that our advice could help! Congrats on getting some s
 
 Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. In the following graphs, you can see which topics appear the most in buzzing channels and quiet channels, their appearance being represented by a mean score.
 
-{% include buzz_topics.html %} {% include quiet_topics.html %}
+{% include buzz_topics.html %} 
+{% include quiet_topics.html %}
 
-You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in the 
+You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in only one of the lists. One of the most blatant examples is how the lexical field of positive emotions appears quite high in the buzzing topic list, while the field of negative emotions is almost at the top of the quiet list.
 
 This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful.
 
 ![image](output/relative_use_lexical.png)
 
-
+![image](output/venn_lexical.png)
 
 # The story of Ada - Chapter 3: Don't forget the tags!
 
-*Wait, I actually have another question. Even my videos about trending topics never go over a few hundreds of views... Is there something else I'm missing even though I'm using enough trendy words in my titles? Maybe it's the description... I guess I don't spend enough time on it.*
+*Wait, I actually have another question. Even my videos about trending topics never go over one thousand views... Is there something else I'm missing even though I'm using enough trendy words in my titles? Maybe it's the description... I guess I don't spend enough time on it.*
 
 *Thanks again! Ada*
 
-
+# Analysis on the usage and distribution of tags
 
 Dear Ada,
 
@@ -164,7 +165,7 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 *Hi!!*
 
-*So I made a new video: I put together some of the topics you suggested. And you know what? It got over 30'000 views, I can't believe it!*
+*So I tried adding the tags you suggested (and more!) to my sports video. And you know what? It went from 2'000 to 32'000 views in a week, I can't believe it! It's gotten me so many subscribers, too! I really feel like this is the start of my YouTuber career, omg*
 
 *I also made a few more videos about uni, actually. I love my classes and missed talking about them in my vlogs... Unlike the first time, though, I made sure to pick a more attractive title, make the video shorter and use a bunch of tags. And they did pretty well! Maybe it's because I have more subscribers now, but I'm sure it's thanks to your advice too!*
 
@@ -172,7 +173,7 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 # Final tip - ensure long term success
 
-We are very pleased to hear that everything is working out for the best with your youtube channel, and very pround to see that our work has an impact in the real world!
+We are very pleased to hear that everything is working out for the best with your youtube channel, and very proud to see that our work has an impact in the real world! A buzz like this is absolutely a great way to kickstart a longer YouTube career, so congratulations!
 
 We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and not so successful content creators. 
 
@@ -198,19 +199,8 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
-TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
-
-
-
-
-![image](output/venn_lexical.png)
-![image](output/wordcloud_tags_buzz.png)
-![image](output/wordcloud_tags_quiet.png)
 
 ![image](output/relative_use_lexical.png)
 
 ![image](output/evolution_sub_ytb.png)
 {% include adas-evolution.html %}
-
-
-<script src="https://gist.github.com/zwierski/fe66b9662878b9f29f9a231190e215d2.js"></script>
