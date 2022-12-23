@@ -204,8 +204,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 
 ![image](output/venn_lexical.png)
-![image](output/wordcloud_tags_buzz.png)
-![image](output/wordcloud_tags_quiet.png)
+![image](output/wordclouds.png)
 
 ![image](output/relative_use_lexical.png)
 
