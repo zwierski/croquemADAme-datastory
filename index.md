@@ -31,7 +31,7 @@ We believe it's important to understand which "objective" parameters you can tun
 
 But first, let's explain to you what kind of data we used for our research.
 
-# What data will we analyse?
+# What data will we analyse, and how?
 
 To answer our questions, we will use a large dataset of YouTube channels and videos: YouNiverse. The dataset is divided into three main types of data: 
 - Channel data, containing e. g. the date a channel registered on YouTube, its number of subscribers, etc.
@@ -44,15 +44,19 @@ We selected channels in the Entertainment category, which has the largest number
 
 To quantify a channel's success, we calculated a "growth score". This score was calculated by dividing the channel's number of subscribers in its latest entry of the timeseries by the number of days the channel was active (date of the latest timeseries - date of the channel's registration). We kept the 15% of channels with the best growth score as our "buzzing" channels (positive examples of success on youtube), and the 15% with the worst score as our "quiet" channels turning this into a binary problem easier to handle.
 
-It's important to note that throughout this data exploration project, the mean of every feature was computed in order to attribute one value per feature per channel (for example the number of words of the title of a given channel is actually the mean of the number of words in the title of every video of that channel).
+The features we used for our analysis are varied, ranging from parameters related to the title (number of words, capitalization...), video length, data about tags (their presence, number and distribution), and weekly upload frequency of the channel.
 
-# Importance of the title
+We computed, for each channel, the mean of each of these parameters. We use means in order to attribute one value per feature per channel. Using this dataset of means across buzzing (1) and quiet (0) channels, we trained a random forest algorithm. This forest outputs whether or not a channel is likely to be successful (1) or not (0), turning our title analysis into a simpler binary problem.
 
-After this first explanation, let's move on to some actual high level tips you can use in your channel's videos.
+Then, we ordered the parameters by order of importance, that is, by how much each of them decreases the impurity in the random forest's classification. 
 
 Here are the feature importances:
 
 {% include features_importance.html %}
+
+# Importance of the title
+
+After this first explanation, let's move on to some actual high level tips you can use in your channel's videos.
 
 First of all, there's one thing we immediately noticed in the video you sent us: the title "day at my uni", while relevant and to the point, could be tweaked a little to be more attractive to your viewers.
 
@@ -60,9 +64,7 @@ Indeed, the title of a video is one of the first things a potential viewer can s
 
 We analyzed several parameters related to the videos' titles: the number of words, the usage of capital letters, the usage of the 'featuring' lexical field - which can indicate collaboration with other YouTubers or simply the presence of other guests, which pronouns are used in the title, and finally, the presence of words related to positive or negative emotions in the title.
 
-We computed, for each channel, the mean of each of these parameters. Using this dataset of means across buzzing (1) and quiet (0) channels, we trained a random forest algorithm. This forest outputs whether or not a video title is likely to contribute to a video's success (1) or not (0), turning our title analysis into a simpler binary problem.
-
-Then, we ordered the parameters by order of importance, that is, by how much each of them decreases the impurity in the random forest's classification. 
+We trained another random forest similar to the previous one, but only with the aforementioned title-related parameters. We then ranked them by importance, using the same metric of impurity decrease to do so.
 
 {% include title_features_importance.html %}
 
@@ -115,13 +117,21 @@ Now, about the difference in views across your videos, this can definitely be li
 {% include buzz_topics.html %} 
 {% include quiet_topics.html %}
 
-You will notice that buzzing and quiet channels tend to tackle similar topics. However, some of the topics are more represented in only one of the lists. One of the most blatant examples is how the lexical field of positive emotions appears quite high in the buzzing topic list, while the field of negative emotions is almost at the top of the quiet list. 
+You will notice that buzzing and quiet channels tend to tackle similar topics. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. However, some of the topics are more represented in only one of the lists. One of the most blatant examples is how the lexical field of negative emotions is almost at the top of the quiet list, while being quite lower in the buzzing list. This may be a reason why your video about negative Instagram comments was not as successful as most of your other ones.
 
-This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful.
+To highlight the topics that are more exclusive to buzzing channels, we created the following Venn diagram:
+
+![image](output/venn_lexical.png)
+
+As you can see, there are only few common topics that are not also widely present in the quiet channels. Among these, we can find sports, which could explain the success of your sports challenge video. You could also tackle other successful topics such as food ("eating"). "toy", "children" and "childish" are popular topics as well, although they may not interest you that much as a vlogger. Their presence could be due to the fact that channels and content aimed towards children are included in the Entertainment category.
+
+To have a clearer view of common topics, we also made a comparative graph of the realtive frequency of some common topics across both lists of channels.
 
 ![image](output/relative_use_lexical.png)
 
-![image](output/venn_lexical.png)
+Some of the topics that are common in both lists, such as "play" or "competing", are still more common among buzzing channels than quiet ones. And even for topics which are more common in quiet channels, this could be due to the sheer number of videos posted about these topics, as we explained before. In the end, the goal is not for you to restrict which topics you want to tackle, but to give you suggestions based on what is popular.
+
+Good luck!
 
 ---
 
@@ -153,9 +163,9 @@ Now, you might wonder which tags to use. To answer this question, we studied the
 
 We observe that most of the common tags appear in both buzzing and quiet channels. This is the same kind of overlap (due to the size of the database) we mentioned in the topic analysis. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
 
-Try to avoid adding stopwords such as "the" or "of", however. These only appears in the most common tag list for quiet videos, therefore they will likely not help much with the referencing of your videos. We think a possible reason to this would be the following: when users enter a search query, they may only type the words meaningful to their search - without adding stopwords that wouldn't help refine the search results.
+Adding stopwords such as "the" or "of" is not necessary at all, however. These only appears in the most common tag list for quiet videos, therefore they will likely not help much with the referencing of your videos. We think a possible reason to this would be the following: when users enter a search query, they may only type the words meaningful to their search - without adding stopwords that wouldn't help refine the search results.
 
-Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
+Still, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a tag word that is very present in buzzing channels, lucky!).
 
 But in the end, how many should you add? If we look at the medians, buzzing channels will have around 19 tags per video, while quiet ones have around 11. With this in mind you can tune the number of tags you use to potentiate visibility of the channel!
 
@@ -180,15 +190,27 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 # Final tip - ensure long term success
 
-We are very pleased to hear that everything is working out for the best with your youtube channel, and very proud to see that our work has an impact in the real world! A buzz like this is absolutely a great way to kickstart a longer YouTube career, so congratulations!
+We are very pleased to hear that everything is working out for the best with your youtube channel, and very proud to see that our work has an impact in the real world! A buzz like this is absolutely a great way to kickstart a longer YouTube career, so congratulations! As for your uni videos, our advice probably played a part, and who knows, you may be setting a new trend!
 
-We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and quieter content creators. 
+We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and quieter content creators. Looking back at our feature importance ranking from the beginning, this is even the second most determinant feature to differentiate between a buzzing and a quiet channel.
 
 {% include boxplot_week_freq.html %}
 
 Over 50% of buzzing channels post more than one video per week - the median being 1.4. On the other hand, the median for the quiet channels, the median is 0.5 (one video posted every two weeks). This is a conclusion we expected, as keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success. Indeed, your viewers will connect to you and your content in a more meaningful way. 
 
 On top of that, having a well known and regular post schedule is a good way to mantain engagement high and make sure that your base audience always watches your videos since they will look forward to the day you post new content.
+
+Good luck with your YouTube career!
+
+---
+
+# The story of Ada - Epilogue: Ada's evolution
+
+During and after our exchanges with her, Ada kept building up her YouTube channel and creating more content. This is what her evolution looks like, in terms of subscriber count.
+
+{% include adas-evolution.html %}
+
+---
 
 # Conclusion
 
@@ -202,10 +224,8 @@ Here is the recipe we found the buzzing channels are following:
  - At least 1 video per week, but it's better if you can do more,
  - Video duration around 10 minutes.
 
-As for the topics of the videos, many topics aren't strictly determinant for a video's success.
+As for the topics of the videos, many topics aren't strictly determinant for an Entertainment category video's success, although some topics tend to appear much more in successful channels rather than quiet channels.
 
-If Ada keeps this up, this is what her evolution could look like in a few years!
-
-{% include adas-evolution.html %}
+---
 
 NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
