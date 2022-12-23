@@ -147,11 +147,15 @@ Now, about the difference in views across your videos, this can definitely be li
 
 ![image](output/tags_buzz.png)
 
-If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other tags that belong to both lists, as they will improve the referencing of your video.
+If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
 
-{% include buzz_topics.html %}
+-----
 
-{% include quiet_topics.html %}
+It's also interesting to see how the words in the title are distributed across certain lexical fields. Just like with the tag words we just saw, we can compare the most common lexical fields present in the buzzing channel corpus and/or in the quiet channel corpus.
+
+{% include buzz_topics.html %} {% include quiet_topics.html %}
+
+![image](output/relative_use_lexical.png)
 
 # The story of Ada - Chapter 4: The buzz
 
