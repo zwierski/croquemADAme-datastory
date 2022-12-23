@@ -155,7 +155,7 @@ If we exclude stopwords such as "the" or "of", we observe that most of the commo
 
 Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
 
-But in the end, how many should you add? On average buzzing channels will have around 20 tags per video and quite ones only have half of that! This is an interesting conclusion as now you can tune the number of tags you use to potentiate visibility of the channel!
+But in the end, how many should you add? On average buzzing channels will have around 20 tags per video, while quiet ones have around 10! With this in mind you can tune the number of tags you use to potentiate visibility of the channel!
 
 {% include boxplot_mean_numtags.html %}
 
@@ -180,15 +180,13 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 We are very pleased to hear that everything is working out for the best with your youtube channel, and very proud to see that our work has an impact in the real world! A buzz like this is absolutely a great way to kickstart a longer YouTube career, so congratulations!
 
-We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and not so successful content creators. 
+We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and quieter content creators. 
 
 {% include boxplot_week_freq.html %}
 
-Over 50% of buzzing channels post more than one video per week (the median is 1.4), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
+Over 50% of buzzing channels post more than one video per week - the median being 1.4. On the other hand, the median for the quiet channels, the median is 0.5 (one video posted every two weeks). This is a conclusion we expected, as keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success. Indeed, your viewers will connect to you and your content in a more meaningful way. 
 
-Keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success as your viewers will connect to you and your content in a more meaningful way. 
-
-Having, for example, a well known post schedule is a good way to mantain engagement high and make sure that your base audience always watches your vides since they will be looking forward to that day of the week they know you will post.
+On top of that, having a well known and regular post schedule is a good way to mantain engagement high and make sure that your base audience always watches your videos since they will look forward to the day you post new content.
 
 # Conclusion
 
@@ -204,8 +202,9 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
+{% include adas-evolution.html %}
 
-
+NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
 
 ![image](output/venn_lexical.png)
 ![image](output/wordclouds.png)
@@ -213,7 +212,7 @@ TODO: Add something about the topic analysis
 ![image](output/relative_use_lexical.png)
 
 ![image](output/evolution_sub_ytb.png)
-{% include adas-evolution.html %}
+
 {% include boxplot_mean_capital_title.html %}
 {% include boxplot_mean_numtags.html %}
 {% include boxplot_mean_duration.html %}
