@@ -14,7 +14,7 @@ Nowadays, becoming a YouTuber is accessible to anyone with a smartphone and an I
 
 ***
 ## Research questions
-* How to grow fast on YouTube ?
+* How to grow on YouTube ?
 * What are the best objetive parameters of a video to improve performance ? 
 * Do the title / category / length of video / tags / date of upload / frequency of upload play a role on channel growth?
 * If so, what are most important parameters and their best values to improve channel growth? 
