@@ -167,7 +167,7 @@ We are very pleased to hear that everything is working out for the best with you
 
 We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successfull and not so successfull content creators. 
 
-Over 50% of buzzing channels post more than one video per week (the median is 1.5), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
+Over 50% of buzzing channels post more than one video per week (the median is 1.4), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
 
 Keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success as your viewers will connect to you and your content in a more meaningful way. 
 
@@ -179,22 +179,17 @@ Take a look at the values in the following graph!
 
 # Conclusion
 
-TODO: summary of the best parameters
+We can conclude from this analysis that, even though the most relevant predictor for success on youtube is the content itself and its quality, there are still some objective parameters that, if tuned correctly, will amplify the reach of our channel and generate more engagement, making the number of views and subcribers grow faster.
 
-`mean_numwords` : 10 words in the title
+Here is the recipe we found the buzzing channels are following:
+ - Around 10 words in the title
+ - At least 30% of capitalization of the words of the title
+ - Always use tags in the videos
+ - Around 20 tags per video 
+ - At least 1 video per week, but it's better if you can do more
+ - Around 10 minutes of video duration
 
-`mean_numtags` : 19 tags used 
-
-`mean_week_freq` : 5 videos per week
-
-`mean_duration` : around 10 minutes
-
-`mean_is_tags` : 0.95 (try to use tags almost all the time)
-
-`mean_feat`: not relevant
-
-`mean_capital_title` : 0.3 (use capital titles 30% of the time)
-
+TODO: Add something about the topic analysis
 
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
