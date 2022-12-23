@@ -53,24 +53,31 @@ It's important to note that throughout this data exploration project, the mean o
 
 # A first glance at the features
 
-After this explanation you probably want some actual high level tips to put to a test in your channel.
+After this first explanation, let's move on to some actual high level tips you can use in your channel's videos.
 
-First of all, the title. The title of the video is one of the first things a potential viewer can see before clicking on your video (perhaps only second to the thumbnail of which we don't have an analysis unfortunatly:( ): it's bound to be important and most likely have a very palpable influence in how the video is received.
-Here are the feature importances of the several parameters. These were calculated using a random forest algorithm to fitted to the data, much like a binary classification problem would work.
+First of all, the title. The title of the video is one of the first things a potential viewer can see before clicking on your video (perhaps only second to the thumbnail, of which we unfortunately don't have an analysis): it's bound to be important and most likely have a very palpable influence in how the video is received.
+
+We analyzed several parameters related to the videos' titles: the number of words, the usage of capital letters, the usage of the 'featuring' lexical field - which can indicate collaboration with other YouTubers or simply the presence of other guests, which pronouns are used in the title, and finally, sentiment analysis of words related to positive or negative emotions in the title.
+
+We computed, for each channel, the mean of each of these parameters. Using this dataset of means across buzzing (1) and quiet (0) channels, we trained a random forest algorithm. This forest outputs whether or not a video title is likely to contribute to a video's success (1) or not (0), turning our title analysis into a simpler binary problem.
+
+We then ordered the parameters by order of importance, that is, by how much each of them decreases the impurity in the random forest's classification. 
 
 {% include title_features_importance.html %}
 
-From this we can see that the number of words in the title clearly has a lot of influence on the result of the video. Let's see more specific values for this feature so you can apply it to your videos.
+From this, we can see that among these parameters, the number of words in the title clearly has the most influence on the success of the video. Let's see more specific values for this feature so you can apply it to your own videos.
 
 {% include boxplot_mean_numwords.html %}
 
-As you can see in this boxplot the successful channels tend to have a few more words in their title, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words, that is, describing better your content (perhaps using more exciting adjectives as well) could have a good effect on the views you get.
+As you can see in this boxplot, successful channels tend to have a few more words in their titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words, that is, describing better your content (perhaps using more exciting adjectives as well) could have a good effect on the views you get.
 
-Let's go on to the tags! We studied the use of tags on our selected channels. To every video in the dataset, we assigned the value 1 if it included tags, and 0 if it did not include any tags. We then grouped the videos by channel and computed the average use of tags in the channel, ranging from 0 to 1. Here's what we found:
+Moreover, we studied the use of tags on our selected channels. To every video in the dataset, we assigned the value 1 if it included tags, and 0 if it did not include any tags. We then grouped the videos by channel and computed the mean use of tags across the channel's videos, ranging from 0 to 1. Here's what we found:
 
 {% include boxplot_mean_is_tags.html %}
 
-The results are clear: although both buzzing and quiet channels use tags in a large majority of their videos The median tag usage for buzzing channels is 1: this means that more than half of our buzzing channels use tags in every single one of their videos.
+The results are clear: although both buzzing and quiet channels use tags in a large majority of their videos, buzzing channels use them much more consistently. Indeed, the median tag usage for buzzing channels is 1: this means that more than half of our buzzing channels use tags in every single one of their videos. If we look at the 25% quartile, the difference becomes even more drastic: it has a value of 0.985 for the buzzing channels - meaning three quarters or more of these channels use tags in at least 98.5% of their videos - while having a value of only 0.843 for quiet channels.
+
+The importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
 
 TODO: we should add something about the "time constraints" here i think the boxplot of the duration of the video is best because this should be a first set of tips that ADA can see the effect of right away (the frequency needs a bit more time to work)
 
@@ -95,7 +102,7 @@ mean_first_person_singular,mean_first_person_plural,mean_second_person,mean_thir
 
 *I’ve got good news: the videos I’ve posted since last time have been much more successful! I made sure to follow your advice about the title and the tags, you know adding relevant words and capitalization and all that. I’ve even got more than 100 subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just not making videos about lame topics or what?*
+*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
 
 *Thank you so much! Ada*
 
@@ -108,6 +115,9 @@ TODO: describe the topic analysis as a response to Ada's question.
 
 tags and sentiment analysis
 
+{% include buzz_topics.html %}
+
+{% include quiet_topics.html %}
 
 # The story of Ada - Chapter 4: The buzz
 
@@ -128,9 +138,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 
 
-{% include buzz_topics.html %}
 
-{% include quiet_topics.html %}
 
 
 
