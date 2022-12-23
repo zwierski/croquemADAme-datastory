@@ -10,7 +10,7 @@ Nowadays, anyone with a smartphone and an Internet connection can become a YouTu
 ![image](images\sebastian-pandelache-taPBy6XyMoQ-unsplash.jpg)
 
 
-# The story of Ada - Chapter 1: My first video
+# The story of Ada - Chapter 1: My first video and importance of the title
 
 *Hi,*
 
@@ -39,7 +39,6 @@ Secondly, regarding the use of tags, the analysis was performed on the number of
 At last, the time constraints refer to the duration of the videos and the posting frequency.
 Let's now focus on how we handle the data.
 
-
 # What data will we analyse?
 
 To answer our questions, we will use a large dataset of YouTube channels and videos: YouNiverse. The dataset is divided into three main types of data: 
@@ -49,9 +48,9 @@ To answer our questions, we will use a large dataset of YouTube channels and vid
 
 {% include categories.html %}
 
-We selected channels in the Entertainment category, which has the largest number of channels in the database and the least dependent on the "quality" of the content (music for example is really influenced by trends, politics by the view point taken on the given subject, and so on).
+We selected channels in the Entertainment category, which has the largest number of channels in the database and the least dependent on the "quality" of the content (music for example is really influenced by trends, politics by the view point taken on the given subject, and so on). Moreover, your vlog channel definitely fits into this category, so we are confident our analysis will be relevant to your content.
 
-Then, we calculated a "growth score", that is, an indicator of the channels' success. The score was calculated by dividing the channel's number of subscribers in its latest entry of the timeseries by the number of days the channel was active (date of the latest timeseries - date of the channel's registration). We kept the 15% of channels with the best growth score as our "buzzing" channels (positive examples of success on youtube), and the 15% with the worst score as our "quiet" channels turning this into a binary problem easier to handle.
+To quantify a channel's success, we calculated a "growth score". This score was calculated by dividing the channel's number of subscribers in its latest entry of the timeseries by the number of days the channel was active (date of the latest timeseries - date of the channel's registration). We kept the 15% of channels with the best growth score as our "buzzing" channels (positive examples of success on youtube), and the 15% with the worst score as our "quiet" channels turning this into a binary problem easier to handle.
 
 It's important to note that throughout this data exploration project, the mean of every feature was computed in order to attribute one value per feature per channel (for example the number of words of the title of a given channel is actually the mean of the number of words in the title of every video of that channel).
 
@@ -79,30 +78,9 @@ From this, we can see that among these parameters, the number of words in the ti
 
 As you can see in this boxplot, successful channels tend to have a few more words in their titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words, that is, describing better your content (perhaps using more exciting adjectives as well) could have a good effect on the views you get.
 
-Moreover, we studied the use of tags on our selected channels. To every video in the dataset, we assigned the value 1 if it included tags, and 0 if it did not include any tags. We then grouped the videos by channel and computed the mean use of tags across the channel's videos, ranging from 0 to 1. Here's what we found:
-
-{% include boxplot_mean_is_tags.html %}
-
-The results are clear: although both buzzing and quiet channels use tags in a large majority of their videos, buzzing channels use them much more consistently. Indeed, the median tag usage for buzzing channels is 1: this means that more than half of our buzzing channels use tags in every single one of their videos. If we look at the 25% quartile, the difference becomes even more drastic: it has a value of 0.985 for the buzzing channels - meaning three quarters or more of these channels use tags in at least 98.5% of their videos - while having a value of only 0.843 for quiet channels.
-
-The importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
-
-Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
-
-As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
-
-TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
-
-
-# The story of Ada - Chapter 2: The importance of the title
-
-*Hi!*
-
-*Well, I've implemented what you talked about in my last couple videos and they did a bit better. I guess the effect of these changes will be potenciated as time goes on but i still think there's probably a few more tips you could give me in order to boost my next videos even more! What can you suggest? You talked about a few more features of the title, what were your conclusions on that?*
-
 # Detailed title and tag analysis
 
-Hello again Ada, 
+Hello again, Ada!
 
 You're right, there's still some work to do. Let's talk about capitalization, sentiment, featurings, pronouns and number of tags.
 
@@ -120,42 +98,71 @@ Finaly for the tags. We've seen the importance of adding tags to your videos but
 
 TODO: add boxplot for the number of tags, i couldnt render the "pretty" ones, only the regulars
 
-# The story of Ada - Chapter 3: The importance of the title
+TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
+
+
+Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
+
+As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
+
+
+# The story of Ada - Chapter 2: Trending topics?
 
 *Hi!*
 
-*I’ve got good news: the videos I’ve posted since last time have been much more successful! I made sure to follow your advice about the title and the tags, you know adding relevant words and capitalization and all that. I’ve even got more than 100 subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
+*I’ve got good news: the videos I’ve posted since last time have been quite successful! I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
-
-*Thank you so much! Ada*
-
-![image](images\ada_part2_white.jpg)
-
+*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 100 views! But another time, I vlogged about my classes at uni, and that video totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
 
 # Topic analysis - Which topics are successful for Entertainment channels on YouTube?
 
-TODO: describe the topic analysis as a response to Ada's question.
-
 Dear Ada,
 
-First of all, we're happy that our advice could help! Congrats on passing the bar of 100 subscribers, that's already an impressive milestone.
+First of all, we're happy that our advice could help! Congrats on getting some subscribers, that's already a promising milestone!
 
-Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. We studied the distribution of tags in both buzzing and quiet channels, and compiled the most used tags in both.
-
-![image](output/tags_quiet.png)
-
-![image](output/tags_buzz.png)
-
-If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
-
------
-
-It's also interesting to see how the words in the title are distributed across certain lexical fields. Just like with the tag words we just saw, we can compare the most common lexical fields present in the buzzing channel corpus and/or in the quiet channel corpus.
+Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. 
 
 {% include buzz_topics.html %} {% include quiet_topics.html %}
 
+TODO
+
+
 ![image](output/relative_use_lexical.png)
+
+
+
+# The story of Ada - Chapter 3: Don't forget the tags!
+
+*Wait, I actually have another question. Even my videos about trending topics never go over a few hundreds of views... Is there something else I'm missing even though I'm using enough trendy words in my titles? Maybe it's the description... I guess I don't spend enough time on it.*
+
+*Thanks again! Ada*
+
+![image](images\ada_part2_white.jpg)
+
+Dear Ada,
+
+Your question is very relevant! Thinking about the description is a good insight, as well, because another relevant feature we studied is closely related to it: the video's tags.
+
+Intuitively, we can assume the importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
+
+To analyse this assumption, we studied the usage of tags in our dataset's channels. To every video in the dataset, we assigned the value 1 if it included tags, and 0 if it did not include any tags. We then grouped the videos by channel and computed the mean use of tags across the channel's videos, ranging from 0 to 1. Here's what we found:
+
+{% include boxplot_mean_is_tags.html %}
+
+The results are clear: although both buzzing and quiet channels use tags in a large majority of their videos, buzzing channels use them much more consistently. Indeed, the median tag usage for buzzing channels is 1: this means that more than half of our buzzing channels use tags in every single one of their videos. If we look at the 25% quartile, the difference becomes even more drastic: it has a value of 0.985 for the buzzing channels - meaning three quarters or more of these channels use tags in at least 98.5% of their videos - while having a value of only 0.843 for quiet channels.
+
+Now, you might wonder which tags to use. To answer this question, we studied the distribution of tags in both buzzing and quiet channels, and compiled the most used tags in both.
+
+![image](output/tags_buzz.png)
+
+![image](output/tags_quiet.png)
+
+If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
+
+Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "challenge" and "vlog".
+
+Good luck with tagging your videos, Ada! We look forward to hearing again from you.
+
 
 # The story of Ada - Chapter 4: The buzz
 
@@ -171,7 +178,9 @@ It's also interesting to see how the words in the title are distributed across c
 
 We are very pleased to hear that everything is working out for the best with your youtube channel, and very pround to see that our work has an impact in the real world!
 
-We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successfull and not so successfull content creators. 
+We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and not so successful content creators. 
+
+{% include boxplot_week_freq.html %}
 
 Over 50% of buzzing channels post more than one video per week (the median is 1.4), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
 
@@ -179,21 +188,17 @@ Keeping up with your audience and consistently sharing content proves to be a gr
 
 Having, for example, a well known post schedule is a good way to mantain engagement high and make sure that your base audience always watches your vides since they will be looking forward to that day of the week they know you will post.
 
-Take a look at the values in the following graph!
-
-{% include boxplot_week_freq.html %}
-
 # Conclusion
 
 We can conclude from this analysis that, even though the most relevant predictor for success on youtube is the content itself and its quality, there are still some objective parameters that, if tuned correctly, will amplify the reach of our channel and generate more engagement, making the number of views and subcribers grow faster.
 
 Here is the recipe we found the buzzing channels are following:
- - Around 10 words in the title
- - At least 30% of capitalization of the words of the title
- - Always use tags in the videos
- - Around 20 tags per video 
- - At least 1 video per week, but it's better if you can do more
- - Around 10 minutes of video duration
+ - Around 10 words in the title,
+ - At least 30% of capitalization of the words of the title,
+ - Always use tags in the videos,
+ - Around 20 tags per video,
+ - At least 1 video per week, but it's better if you can do more,
+ - Video duration around 10 minutes.
 
 TODO: Add something about the topic analysis
 
