@@ -28,9 +28,13 @@ Dear Ada,
 
 Thanks for reaching out to us! We’ve been hard at work on our analysis, and we’d love to use it to help you. :)
 First of all, it's important to understand which "objective" parameters you can tune, as a content producer on youtube, to hopefully have a better performance in the long run. 
+
 From the data we have access to as well as our knowledge of what potenciates engagement we selected four main parameters to study in depth: the titles of the videos, the tags used and, finally, the time constraints.
+
 Firstly looking at the title, there are two main categories of features: its content and its shape.
+
 For the content we chose to focus on referencing featutings, the use of different pronouns (with varying person and number) and the overall sentiment of the sentence (positive or negative). On the another hand, for the shape, the nuances taken into account were the number of words and the capitalization.
+
 Secondly, regarding the use of tags, the analysis was performed on the number of tags used and on the specific tags that are most used.
 At last, the time constraints refer to the duration of the videos and the posting frequency.
 Let's now focus on how we handle the data.
@@ -127,7 +131,19 @@ TODO: Ada sends another message, she focused on more popular topics and her chan
 
 # Final tip - ensure long term success
 
-TODO: post frequency
+We are very pleased to hear that everything is working out for the best with your youtube channel, and very pround to see that our work has an impact in the real world!
+
+We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successfull and not so successfull content creators. 
+
+Over 50% of buzzing channels post more than one video per week (the median is 1.5), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
+
+Keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success as your viewers will connect to you and your content in a more meaningful way. 
+
+Having, for example, a well known post schedule is a good way to mantain engagement high and make sure that your base audience always watches your vides since they will be looking forward to that day of the week they know you will post.
+
+Take a look at the values in the following graph!
+
+{% include boxplot_week_freq.html %}
 
 # Conclusion
 
@@ -144,7 +160,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 
 
 
-{% include boxplot_week_freq.html %}
+
 
 ![image](output/venn_lexical.png)
 
