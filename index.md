@@ -100,7 +100,7 @@ To summarise, paying attention to the title of your videos as well as their dura
 
 *I’ve got good news: the new videos I’ve posted since last time have been quite successful! I made them shorter than the uni vlog (around 10 minutes like you suggested), and I made sure to follow your advice about the title, you know adding around 10 words and capitalization and all that. I’ve even gotten a few subscribers now! Oh and don’t know if that helped, but I also changed the titles of my old videos - looking back, they were so bad hahaha*
 
-*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 3000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
+*I think I could do even better though... Sometimes there's a big difference in the number of views I get on each video. One time, I vlogged about a sports challenge I participated in, and got over 3'000 views! But another time, I made a video about some comments I got on Instagram, and that one totally flopped! And even my most viewed videos never go over a few thousand views... Am I just making videos about lame topics or what?*
 
 ![image](images\ada_part2_white.jpg)
 
@@ -108,7 +108,7 @@ To summarise, paying attention to the title of your videos as well as their dura
 
 Dear Ada,
 
-First of all, we're happy that our advice could help! Congrats on getting some subscribers, that's already a promising milestone!
+First of all, we're happy that our advice could help! Congrats on getting some subscribers and views in the thousands, that's already a promising milestone!
 
 Now, about the difference in views across your videos, this can definitely be linked to the topics you present in each of them. Naturally, trending topics change over time, but we noticed a few topics that appear consistently in our buzzing channels' videos. In the following graphs, you can see which topics appear the most in buzzing channels and quiet channels, their appearance being represented by a mean score.
 
@@ -137,7 +137,7 @@ Dear Ada,
 
 Your question is very relevant! Thinking about the description is a good insight, as well, because another relevant feature we studied is closely related to it: the video's tags.
 
-Intuitively, we can assume the importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
+Intuitively, we can assume the importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query or in recommendations of a video with similar tags.
 
 To analyse this assumption, we studied the usage of tags in our dataset's channels. To every video in the dataset, we assigned the value 1 if it included tags, and 0 if it did not include any tags. We then grouped the videos by channel and computed the mean use of tags across the channel's videos, ranging from 0 to 1. Here's what we found:
 
@@ -151,11 +151,13 @@ Now, you might wonder which tags to use. To answer this question, we studied the
 
 ![image](output/tags_quiet.png)
 
-If we exclude stopwords such as "the" or "of", we observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
+We observe that most of the common tags appear in both buzzing and quiet channels. This overlap makes sense due to the size of the database of channels: there are simply too many videos for every single one of them to be successful. We still notice, however, that certain tags appear in the buzzing list but not in the quiet one: among these, "challenge" or "prank" might be tags of interest to your channel. Of course, it can also be effective to add other relevant tags that belong to both lists, as they will improve the referencing of your video.
+
+Try to avoid adding stopwords such as "the" or "of", however. These only appears in the most common tag list for quiet videos, therefore they will likely not help much with the referencing of your videos. We think a possible reason to this would be the following: when users enter a search query, they may only type the words meaningful to their search - without adding stopwords that wouldn't help refine the search results.
 
 Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
 
-But in the end, how many should you add? On average buzzing channels will have around 20 tags per video, while quiet ones have around 10! With this in mind you can tune the number of tags you use to potentiate visibility of the channel!
+But in the end, how many should you add? If we look at the medians, buzzing channels will have around 19 tags per video, while quiet ones have around 11. With this in mind you can tune the number of tags you use to potentiate visibility of the channel!
 
 {% include boxplot_mean_numtags.html %}
 
@@ -170,7 +172,7 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 *Hi!!*
 
-*So I tried adding the tags you suggested (and more!) to my sports video. And you know what? It went from 2'000 to 32'000 views in a week, I can't believe it! It's gotten me so many subscribers, too! I really feel like this is the start of my YouTuber career, omg*
+*So I tried adding the tags you suggested (and more!) to my sports video. And you know what? It went from 3'000 to 32'000 views in a week, I can't believe it! It's gotten me so many subscribers, too! I really feel like this is the start of my YouTuber career, omg*
 
 *I also made a few more videos about uni, actually. I love my classes and missed talking about them in my vlogs... Unlike the first time, though, I made sure to pick a more attractive title, make the video shorter and use a bunch of tags. And they did pretty well! Maybe it's because I have more subscribers now, but I'm sure it's thanks to your advice too!*
 
@@ -202,17 +204,10 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
+If Ada keeps this up, this is what her evolution could look like in a few years!
+
 {% include adas-evolution.html %}
 
 NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
 
-![image](output/venn_lexical.png)
-![image](output/wordclouds.png)
-
-![image](output/relative_use_lexical.png)
-
 ![image](output/evolution_sub_ytb.png)
-
-{% include boxplot_mean_capital_title.html %}
-{% include boxplot_mean_numtags.html %}
-{% include boxplot_mean_duration.html %}
