@@ -72,29 +72,25 @@ From this, we can see that among these parameters, the number of words in the ti
 
 As you can see in this boxplot, successful channels tend to have a few more words than quiet channels in their videos' titles, with a median of 10 words. We'd say this is due to a better ability to convey the content of the video if you use a couple more words: that is, describing your content in more detail - perhaps using more exciting adjectives as well - could boost your video's views.
 
-For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
-
-Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
-
 Capitalization of the words in the title also seems to have a positive effect on the outcome. Here are the results of our analysis:
 
 {% include boxplot_mean_capital_title.html %}
 
 On average, successful channels have 30% of capitalization and quiet ones only 20%. This could be due to two reasons: firstly, having proper capitalization at the start of the title's words - like you would have in a book or movie title - can give your video a more professional air. But more importantly, since it's important for a title to be eye-catching, we believe that writing the most important words in all-caps can strongly direct the viewer's attention to them.
 
+For featurings unfortunatly we didn't see much difference in use between buzzing and quiet channels. Besides, as you're only starting out, don't worry about collaborating with other YouTubers yet.
+
+Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
+
 # Another main criteria: the video's duration
 
-Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels, as you can see on this boxplot.
+Another thing we noticed is how your uni vlog is 41 minutes long. Naturally, it's always exciting to add a lot of footage to your work, but if a video is too lengthy, users may be discouraged from clicking on it, let alone viewing it all the way through. In our analysis, we found that many of our successful and quiet channels have videos much shorter than 41 minutes on average, as you can see on this boxplot which displays the durations in seconds.
 
 {% include boxplot_mean_duration.html %}
 
-As you can see unsuccessful channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
+If we look at the median, buzzing channels' videos are slightly longer than quieter channels', that is, around 8 minutes long (versus 5 minutes and 30 seconds for quieter channels). Since you focus on vlogs, it's likely you might want to make videos a little lengthier than this. In that case, we'd recommend aiming for a length between the median and the 3rd quartile - here, the 3rd quartile for successful channels is around 12 minutes. This 8-12 minutes interval is rather precise and corresponds to a good 25 % of our dataset's successful channels. 
 
-
-
-
-
-Good luck with your YouTube channel! Please let us know if you have any more questions.
+To summarise, paying attention to the title of your videos as well as their duration is already a good start to make your videos more attractive. Good luck with your YouTube channel! Please let us know if you have any more questions.
 
 ---
 
@@ -159,7 +155,7 @@ If we exclude stopwords such as "the" or "of", we observe that most of the commo
 
 Moreover, unlike the title, tag words do not need to be exactly relevant to your video's topic. Of course, it's not a good practice to add too many tags that have nothing to do with your video: YouTube even deems this kind of "tag spamming" to be against its terms of service. Still, without resorting to spamming, don't hesitate to branch out and add a few general words to your tags! For example, you could definitely add the word "fun" to your sports challenge video's tags, on top of the more relevant "vlog" and "challenge" (which is a topic very present in buzzing channels, lucky!).
 
-But in the end, how many should you add? On average buzzing channels will have around 20 tags per video and quite ones only have half of that! This is an interesting conclusion as now you can tune the number of tags you use to potentiate visibility of the channel!
+But in the end, how many should you add? On average buzzing channels will have around 20 tags per video, while quiet ones have around 10! With this in mind you can tune the number of tags you use to potentiate visibility of the channel!
 
 {% include boxplot_mean_numtags.html %}
 
@@ -184,15 +180,13 @@ Good luck with tagging your videos, Ada! We look forward to hearing again from y
 
 We are very pleased to hear that everything is working out for the best with your youtube channel, and very proud to see that our work has an impact in the real world! A buzz like this is absolutely a great way to kickstart a longer YouTube career, so congratulations!
 
-We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and not so successful content creators. 
+We'll leave you with a final tip! One of the findings we came up with in our analysis was that the frequency with which a youtuber posts is different between successful and quieter content creators. 
 
 {% include boxplot_week_freq.html %}
 
-Over 50% of buzzing channels post more than one video per week (the median is 1.4), as for the quiet ones the median is 0.5 meaning there are even weeks with no new videos. 
+Over 50% of buzzing channels post more than one video per week - the median being 1.4. On the other hand, the median for the quiet channels, the median is 0.5 (one video posted every two weeks). This is a conclusion we expected, as keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success. Indeed, your viewers will connect to you and your content in a more meaningful way. 
 
-Keeping up with your audience and consistently sharing content proves to be a great way to ensure long term success as your viewers will connect to you and your content in a more meaningful way. 
-
-Having, for example, a well known post schedule is a good way to mantain engagement high and make sure that your base audience always watches your vides since they will be looking forward to that day of the week they know you will post.
+On top of that, having a well known and regular post schedule is a good way to mantain engagement high and make sure that your base audience always watches your videos since they will look forward to the day you post new content.
 
 # Conclusion
 
@@ -208,10 +202,9 @@ Here is the recipe we found the buzzing channels are following:
 
 TODO: Add something about the topic analysis
 
-TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
+{% include adas-evolution.html %}
 
-
-
+NB: the story and evolution of our fictional YouTuber, Ada Westerlain, was inspired by the real YouTuber Emma Chamberlain, whose channel appears in the Entertainment category of the YouNiverse dataset.
 
 ![image](output/venn_lexical.png)
 ![image](output/wordclouds.png)
@@ -219,6 +212,7 @@ TODO IF POSSIBLE: Include the interactive tool for predicting a video's success 
 ![image](output/relative_use_lexical.png)
 
 ![image](output/evolution_sub_ytb.png)
-{% include adas-evolution.html %}
 
-
+{% include boxplot_mean_capital_title.html %}
+{% include boxplot_mean_numtags.html %}
+{% include boxplot_mean_duration.html %}
