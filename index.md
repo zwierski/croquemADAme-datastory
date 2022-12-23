@@ -59,6 +59,10 @@ It's important to note that throughout this data exploration project, the mean o
 
 After this first explanation, let's move on to some actual high level tips you can use in your channel's videos.
 
+Here are the feature importances:
+
+{% include features_importance.html %}
+
 First of all, the title. The title of the video is one of the first things a potential viewer can see before clicking on your video (perhaps only second to the thumbnail, of which we unfortunately don't have an analysis): it's bound to be important and most likely have a very palpable influence in how the video is received.
 
 We analyzed several parameters related to the videos' titles: the number of words, the usage of capital letters, the usage of the 'featuring' lexical field - which can indicate collaboration with other YouTubers or simply the presence of other guests, which pronouns are used in the title, and finally, sentiment analysis of words related to positive or negative emotions in the title.
@@ -83,7 +87,11 @@ The results are clear: although both buzzing and quiet channels use tags in a la
 
 The importance of using tags makes a lot of sense with regards to YouTube's search engine: although they are barely visible to viewers, tags help categorise the video and will make it more likely to appear in the search results of a related query.
 
-TODO: we should add something about the "time constraints" here i think the boxplot of the duration of the video is best because this should be a first set of tips that ADA can see the effect of right away (the frequency needs a bit more time to work)
+Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly shorter than other channels. 
+
+As you can see unsuccessfull channels have videos that on average are three minutes longer. From the buzzing channels we can conclude that a duration between four to eight minutes is the one that works best!
+
+TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
 
 
 # The story of Ada - Chapter 2: The importance of the title
@@ -159,17 +167,9 @@ Take a look at the values in the following graph!
 
 # Conclusion
 
+TODO: summary of the best parameters
+
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
-
-
-{% include features_importance.html %}
-
-
-
-
-
-
-
 
 
 
