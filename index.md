@@ -89,7 +89,7 @@ The importance of using tags makes a lot of sense with regards to YouTube's sear
 
 Let's now take a look at the average duration of the videos. We found that successfull channels have videos slightly longer than other channels. 
 
-As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the one that works best!
+As you can see unsuccessfull channels have videos that on average are three minutes shorter. From the buzzing channels we can conclude that a duration of around eight minutes is the median and ten minuts is the one that works best!
 
 TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, only the regulars
 
@@ -100,13 +100,25 @@ TODO: add boxplot for the mean duration, i couldnt render the "pretty" ones, onl
 
 *Well, I've implemented what you talked about in my last couple videos and they did a bit better. I guess the effect of these changes will be potenciated as time goes on but i still think there's probably a few more tips you could give me in order to boost my next videos even more! What can you suggest? You talked about a few more features of the title, what were your conclusions on that?*
 
-# Detailed title analysis
+# Detailed title and tag analysis
 
-TODO: add the analysis of the other title features
+Hello again Ada, 
 
-mean_capital_title
-mean_feats
-mean_first_person_singular,mean_first_person_plural,mean_second_person,mean_third_person_singular,mean_third_person_plural
+You're right, there's still some work to do. Let's talk about capitalization, sentiment, featurings, pronouns and number of tags.
+
+For featurings unfortunatly we didn't see much difference in use between buzzing and quite channels. 
+
+TODO: was there any interesting conclusion about pronoun use?
+
+Similarly, for sentiment analysis of the title, the only thing we were able to conclude is that it doesn't really matter the sentiment, what matters most is using more words that describe it, for example more positive/negative adjectives.
+
+On the other hand, capitalization of the words in the title seems to have a positive effect on the outcome. On average successful channels have 30% of capitalization and quite ones only 20%. Here are the results:
+
+TODO: add boxplot for the capitalization, i couldnt render the "pretty" ones, only the regulars
+
+Finaly for the tags. We've seen the importance of adding tags to your videos but how many should you add? On average buzzing channels will have around 20 tags per video and quite ones only have half of that! This is an interesting conclusion as now you can tune the number of tags you use to potentiate visibility of the channel!
+
+TODO: add boxplot for the number of tags, i couldnt render the "pretty" ones, only the regulars
 
 # The story of Ada - Chapter 3: The importance of the title
 
@@ -168,6 +180,21 @@ Take a look at the values in the following graph!
 # Conclusion
 
 TODO: summary of the best parameters
+
+`mean_numwords` : 10 words in the title
+
+`mean_numtags` : 19 tags used 
+
+`mean_week_freq` : 5 videos per week
+
+`mean_duration` : around 10 minutes
+
+`mean_is_tags` : 0.95 (try to use tags almost all the time)
+
+`mean_feat`: not relevant
+
+`mean_capital_title` : 0.3 (use capital titles 30% of the time)
+
 
 TODO IF POSSIBLE: Include the interactive tool for predicting a video's success based on title, length...
 
